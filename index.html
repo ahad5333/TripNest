@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TripNest - Your AI Travel Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --color-primary: #1B4D72;
+        --color-secondary: #F4A261;
+        --color-accent: #2A9D8F;
+        --color-background: #F8F9FA;
+        --color-surface: #FFFFFF;
+        --color-text-primary: #264653;
+        --color-text-secondary: #6B7280;
+        --color-border: #E5E7EB;
+        --color-danger: #DC2626;
+        --color-danger-surface: #FEF2F2;
+      }
+      .dark {
+        --color-primary: #F4A261;
+        --color-secondary: #2A9D8F;
+        --color-accent: #2A9D8F;
+        --color-background: #264653;
+        --color-surface: #1f3541;
+        --color-text-primary: #F8F9FA;
+        --color-text-secondary: #9CA3AF;
+        --color-border: #4a5e68;
+        --color-danger: #F87171;
+        --color-danger-surface: #412226;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: 'var(--color-primary)',
+              secondary: 'var(--color-secondary)',
+              accent: 'var(--color-accent)',
+              background: 'var(--color-background)',
+              surface: 'var(--color-surface)',
+              'text-primary': 'var(--color-text-primary)',
+              'text-secondary': 'var(--color-text-secondary)',
+              border: 'var(--color-border)',
+              danger: 'var(--color-danger)',
+              'danger-surface': 'var(--color-danger-surface)',
+              'deep-ocean-blue': '#1B4D72',
+              'warm-sunset-orange': '#F4A261',
+              'fresh-mint-green': '#2A9D8F',
+            },
+            fontFamily: {
+              sans: ['Open Sans', 'sans-serif'],
+              heading: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-background text-text-primary transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

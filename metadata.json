@@ -1,0 +1,9 @@
+{
+  "name": "TripNest",
+  "description": "A comprehensive travel assistant Progressive Web App (PWA) that combines intuitive trip planning tools with an intelligent AI-powered chat assistant to provide personalized recommendations, real-time assistance, and seamless booking capabilities.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation",
+    "microphone"
+  ]
+}
